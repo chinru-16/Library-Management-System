@@ -1,0 +1,187 @@
+/* ===== Background & Page ===== */
+body {
+    background: url('https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843df778e1ef0297e8601a045b');
+    background-size: cover;
+}
+
+/* ===== Smooth Fade In ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    background-color: rgba(244, 225, 210, 0.95);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    border-bottom: 3px solid #d9b08c;
+    transition: transform 0.3s;
+}
+
+header:hover {
+    transform: scale(1.02);
+}
+
+header h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(230, 213, 184, 0.95);
+    padding: 10px;
+    backdrop-filter: blur(2px);
+}
+
+nav a {
+    text-decoration: none;
+    color: #5d4037;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d9b08c;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===== Intro Section ===== */
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 248, 240, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    animation: fadeIn 1s ease-in;
+}
+
+.bookshelf {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.bookshelf:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Table Container ===== */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* ===== Cozy Table ===== */
+.cozy-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 248, 240, 0.9);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+.cozy-table th, .cozy-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.cozy-table th {
+    background-color: #e6d5b8;
+    color: #5d4037;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.1em;
+}
+
+.cozy-table tr:nth-child(even) {
+    background-color: #fdf6e3;
+}
+
+.cozy-table tr:hover {
+    background-color: #f4e1d2;
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}
+
+/* ===== NEW: ID Column Styling ===== */
+.cozy-table th:first-child,
+.cozy-table td:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: #8b5e3c;
+}
+
+/* ===== Cozy Form ===== */
+.cozy-form {
+    background: rgba(255, 248, 240, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    backdrop-filter: blur(2px);
+}
+
+.cozy-form label {
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.cozy-form input,
+.cozy-form select {
+    padding: 8px;
+    border: 1px solid #d9b08c;
+    border-radius: 8px;
+}
+
+.cozy-form button {
+    padding: 10px;
+    background-color: #d9b08c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cozy-form button:hover {
+    background-color: #b08968;
+    transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    background-color: rgba(244, 225, 210, 0.95);
+    backdrop-filter: blur(2px);
+}
